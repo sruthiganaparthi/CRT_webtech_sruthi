@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animated Marquee</title>
+</head>
+<style>
+    body{
+        background-color: brown;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+    .marquee-container{
+        width: 80px;
+        margin: 20%;
+        padding: 10px;
+        height: 60;
+        overflow: hiden;
+        position: relative;
+        border: 10px solid #ffcc00;
+        background-color: liner-gradient rgb 200,132,191;
+        border-radius: 10px;
+        box-shadow: 15px gold;
+    }
+    .marquee-text{
+        position: absolute;
+        width:100%;
+        font-size: 22px;
+        text-shadow: 2px 2px 5px black;
+        white-space: nowrap;
+    }
+    .scroll-left{animation: scrollleft 10s linear infinite;}
+    @keyframes scrollleft{
+        from{transform: translateX(100%);}
+            to{transform: translateX(-100%);}
+    }
+    .bounce{ animation: bounce 3s ease-in-out infinite alternate;text-align: center;}
+    @keyframes scrollleft{
+        from{transform: translateX(0);}
+        to{transform: translateX(50%);}
+    }
+    .slide-up{animation: slideup 5s linear infinite;}
+    @keyframes slideup{
+        from{top: 100%;}
+        to{top:-100%;}
+    }
+</style>
+<body>
+    <h1>Optimized CSS Marquee Effects🚀</h1>
+    <div class="marquee-container">
+        <div class="marquee-text scroll-left">  🔥welcome to the Amazing Marquee show🔥</div>
+    <div class="marquee-container">
+        <div class="marquee-text bounce">🚀CSS-styled Marquee with Bounce Effect🌈</div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-text slide-up"> 🔥Marquee Sliding Upward Effect🚀</div>
+    </div>
+</body>
+</html>
